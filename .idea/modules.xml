@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TCash_IPLAY.iml" filepath="$PROJECT_DIR$/TCash_IPLAY.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iplay/iplay.iml" filepath="$PROJECT_DIR$/iplay/iplay.iml" />
+    </modules>
+  </component>
+</project>

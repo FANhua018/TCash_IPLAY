@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="loading-more-view-1.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/3c223d08d98e564b64210fad70773ee3355d27bb/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3c223d08d98e564b64210fad70773ee3355d27bb/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.finalteam.loadingviewfinal/loading-more-view/1.0.1/dc1fa874e225ea5ef9a1da40a12116cd44bdcf3e/loading-more-view-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

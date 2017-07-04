@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">IPlay</string>
+
+    <string name="signIn">签到</string>
+    <string name="txt_mine_article_post">文章跟贴</string>
+    <string name="txt_mine_browsing_record">社区浏览记录</string>
+    <string name="txt_mine_card_list">我的集卡</string>
+    <string name="txt_mine_community_post">社区帖子</string>
+    <string name="txt_mine_game_package">游戏礼包</string>
+    <string name="txt_mine_integral_task">积分任务</string>
+    <string name="txt_mine_integral_welfare">积分福利</string>
+    <string name="txt_mine_msg_remind">消息提醒</string>
+    <string name="txt_mine_my_collection">我的收藏</string>
+    <string name="txt_mine_pealse_login">请登录</string>
+    <string name="txt_mine_play_gold">积分</string>
+
+    <string name="go_to_int_mall">巧取豪夺，爱玩礼包好胆你来拿～</string>
+</resources>
