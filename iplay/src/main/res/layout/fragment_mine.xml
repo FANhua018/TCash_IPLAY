@@ -1,6 +1,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:attr="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -161,13 +161,13 @@
 
             <LinearLayout
                 android:id="@+id/ll_integral"
-                app:layout_widthPercent="100.0%"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iv_top_pic"
                 android:gravity="center"
                 android:paddingBottom="8.0dip"
-                android:paddingTop="8.0dip">
+                android:paddingTop="8.0dip"
+                app:layout_widthPercent="100.0%">
 
                 <TextView
                     android:id="@+id/tv_integral"
@@ -190,6 +190,304 @@
                     android:textColor="@color/mine_boon_des"
                     android:textSize="10.5sp" />
             </LinearLayout>
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_main_bg">
+
+            <RelativeLayout
+                android:id="@+id/rl_task"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="4.0dip"
+                android:background="@color/common_item_bg"
+                android:gravity="center"
+                android:paddingBottom="6.0dip"
+                android:paddingTop="6.0dip"
+                app:layout_widthPercent="33.333324%">
+
+                <TextView
+                    android:id="@+id/tv_task"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30.0dip"
+                    android:drawablePadding="8.0dip"
+                    android:drawableTop="@mipmap/icon_pgmy1_task"
+                    android:gravity="center"
+                    android:text="@string/taskCenter"
+                    android:textColor="@color/common_main_text"
+                    android:textSize="10.599976sp" />
+
+                <TextView
+                    android:id="@+id/tv_task_sup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_task"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="9.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/shape_mine_textbg_yellow"
+                    android:gravity="center"
+                    android:textColor="@color/mine_sup_info"
+                    android:textSize="8.599976sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="4.0dip"
+                android:layout_toRightOf="@id/rl_task"
+                android:background="@color/common_item_bg"
+                android:gravity="center"
+                android:paddingBottom="6.0dip"
+                android:paddingTop="6.0dip"
+                app:layout_widthPercent="33.333324%">
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30.0dip"
+                    android:drawablePadding="8.0dip"
+                    android:drawableTop="@mipmap/icon_pgmy1_mes"
+                    android:gravity="center"
+                    android:text="@string/txt_mine_msg_remind"
+                    android:textColor="@color/common_main_text"
+                    android:textSize="10.599976sp" />
+
+                <TextView
+                    android:id="@+id/tv_msg_sup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_msg"
+                    android:layout_marginBottom="9.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:gravity="center"
+                    android:textColor="@color/mine_sup_info"
+                    android:textSize="8.599976sp" />
+
+                <TextView
+                    android:id="@+id/tv_msg_unread"
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_alignBottom="@id/tv_msg"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@id/tv_msg"
+                    android:background="@drawable/shape_oval_msg_blue_bg"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/common_main_text_white"
+                    android:textSize="10.0sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_collection"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:layout_toRightOf="@id/rl_msg"
+                android:background="@color/common_item_bg"
+                android:gravity="center"
+                android:paddingBottom="6.0dip"
+                android:paddingTop="6.0dip"
+                app:layout_widthPercent="33.333324%">
+
+                <TextView
+                    android:id="@+id/tv_collection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30.0dip"
+                    android:drawablePadding="8.0dip"
+                    android:drawableTop="@mipmap/icon_pgmy1_like"
+                    android:gravity="center"
+                    android:text="@string/txt_mine_my_collection"
+                    android:textColor="@color/common_main_text"
+                    android:textSize="10.599976sp" />
+
+                <TextView
+                    android:id="@+id/tv_collection_sup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_collection"
+                    android:layout_marginBottom="9.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:gravity="center"
+                    android:textColor="@color/mine_sup_info"
+                    android:textSize="8.599976sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_article"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_task"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/common_item_bg"
+                android:gravity="center"
+                android:paddingBottom="6.0dip"
+                android:paddingTop="6.0dip"
+                app:layout_widthPercent="33.333324%">
+
+                <TextView
+                    android:id="@+id/tv_article"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30.0dip"
+                    android:drawablePadding="8.0dip"
+                    android:drawableTop="@mipmap/icon_pgmy1_title"
+                    android:gravity="center"
+                    android:text="@string/txt_mine_article_post"
+                    android:textColor="@color/common_main_text"
+                    android:textSize="10.599976sp" />
+
+                <TextView
+                    android:id="@+id/tv_article_sup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_article"
+                    android:layout_marginBottom="9.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:gravity="center"
+                    android:textColor="@color/mine_sup_info"
+                    android:textSize="8.599976sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_post"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_msg"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_toRightOf="@id/rl_article"
+                android:background="@color/common_item_bg"
+                android:gravity="center"
+                android:paddingBottom="6.0dip"
+                android:paddingTop="6.0dip"
+                app:layout_widthPercent="33.333324%">
+
+                <TextView
+                    android:id="@+id/tv_post"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30.0dip"
+                    android:drawablePadding="8.0dip"
+                    android:drawableTop="@mipmap/icon_pgmy1_bbs"
+                    android:gravity="center"
+                    android:text="@string/txt_mine_community_post"
+                    android:textColor="@color/common_main_text"
+                    android:textSize="10.599976sp" />
+
+                <TextView
+                    android:id="@+id/tv_post_sup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_post"
+                    android:layout_marginBottom="9.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:gravity="center"
+                    android:textColor="@color/mine_sup_info"
+                    android:textSize="8.599976sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_browse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_collection"
+                android:layout_marginTop="1.0dip"
+                android:layout_toRightOf="@id/rl_post"
+                android:background="@color/common_item_bg"
+                android:gravity="center"
+                android:paddingBottom="6.0dip"
+                android:paddingTop="6.0dip"
+                app:layout_widthPercent="33.333324%">
+
+                <TextView
+                    android:id="@+id/tv_browse"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30.0dip"
+                    android:drawablePadding="8.0dip"
+                    android:drawableTop="@mipmap/icon_pgmy1_eye"
+                    android:gravity="center"
+                    android:text="@string/txt_mine_browsing_record"
+                    android:textColor="@color/common_main_text"
+                    android:textSize="10.599976sp" />
+
+                <TextView
+                    android:id="@+id/tv_browsing_sup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_browse"
+                    android:layout_marginBottom="9.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:gravity="center"
+                    android:textColor="@color/mine_sup_info"
+                    android:textSize="8.599976sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_card_collection"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_article"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/common_item_bg"
+                android:gravity="center"
+                android:paddingBottom="6.0dip"
+                android:paddingTop="6.0dip"
+                app:layout_widthPercent="33.333324%">
+
+                <TextView
+                    android:id="@+id/tv_card_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30.0dip"
+                    android:drawablePadding="8.0dip"
+                    android:drawableTop="@mipmap/icon_pgmy_card"
+                    android:gravity="center"
+                    android:text="@string/txt_mine_card_list"
+                    android:textColor="@color/common_main_text"
+                    android:textSize="10.599976sp" />
+
+                <TextView
+                    android:id="@+id/tv_card_list_sup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_card_list"
+                    android:layout_marginBottom="9.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:gravity="center"
+                    android:textColor="@color/mine_sup_info"
+                    android:textSize="8.599976sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/common_main_bg" />
+
+            <View
+                android:id="@+id/test1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignBottom="@id/rl_card_collection"
+                android:layout_alignTop="@id/rl_card_collection"
+                android:layout_marginRight="1.0dip"
+                android:layout_toRightOf="@id/rl_card_collection"
+                android:background="@color/common_item_bg"
+                app:layout_widthPercent="66.6666%" />
         </android.support.percent.PercentRelativeLayout>
 
 
