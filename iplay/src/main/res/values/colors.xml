@@ -30,6 +30,7 @@
     <color name="common_blue_bg">#ff4a90e2</color>
     <color name="common_main_text">#ff222222</color>
     <color name="common_main_text_white">@color/colorWhite</color>
+    <color name="common_main_text_red">#ffd0240c</color>
     <color name="mine_boon_des">#4c222222</color>
     <color name="mine_jifen">@color/colorWhite</color>
     <color name="mine_jifen_mission_bg">#fffffde8</color>
